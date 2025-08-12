@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Clientes</h1>
+        
+        <div class="form-container">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="documento" placeholder="Documento">
+            <input type="text" id="telefono" placeholder="Teléfono">
+            <input type="text" id="idDireccion" placeholder="ID Dirección">
+            <button onclick="agregarCliente()">Agregar Cliente</button>
+        </div>
+
+        <h2>Lista de clientes</h2>
+        <table id="tablaClientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Documento</th>
+                    <th>Teléfono</th>
+                    <th>ID Dirección</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se insertan los clientes -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/clientes.js"></script>
+</body>
+</html>
